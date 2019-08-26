@@ -13,11 +13,11 @@ class AnnouncementComponent extends React.Component {
         <div className={classes.form}>
             <div class="alert alert-success" role="alert">
                 <h4 class="alert-heading">Well done!</h4>
-                <h5 class="alert-heading">Well done!</h5>
-                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                <h5 class="alert-heading">Swift Technologies (Pvt) Ltd</h5>
+                <p>Aww yeah, you have successfully reached to the final stages of the Electronic Tender Selection Process and finally became the ultimate winner. For transparency sake the selection process is done independently by the system.</p>
                 <hr/>
-                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                <a href="/viewannouncementdetails" class="btn btn-primary">Go somewhere</a>
+                <p class="mb-0">Whenever you need information about how to apply and how the Tender Selection Process is done, <a href="/howtoapply">Click here</a></p>
+                <a href="/viewannouncementdetails" class="btn btn-primary">View details</a>
             </div>
         </div>
        );
@@ -26,5 +26,3 @@ class AnnouncementComponent extends React.Component {
 
 export default withStyles(styles)(AnnouncementComponent);
 
-AnnouncementComponent.propTypes = {
-};

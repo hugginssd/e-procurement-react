@@ -9,7 +9,7 @@ class NavBarComponent extends React.Component{
         return(
             <div>
                 <nav  class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
-                    <a class="navbar-brand text-white"   href="http://localhost:3000/dashboard">E-voting</a>
+                    <a class="navbar-brand text-white-lg"   href="http://localhost:3000/dashboard">E-voting</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
