@@ -2,6 +2,7 @@ import React from 'react'
 import NavBarComponent from '../navbar/navbar';
 import withStyles from '@material-ui/core/styles/withStyles';
 import styles from './styles';
+import AnnouncementComponent from '../announcement/announcement';
 
 
 class DashboardComponent extends React.Component{
@@ -10,6 +11,7 @@ class DashboardComponent extends React.Component{
         return(
             <div>
                  <NavBarComponent></NavBarComponent>
+                 <AnnouncementComponent></AnnouncementComponent>
             </div>
         );
     }
