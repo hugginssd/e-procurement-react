@@ -9,23 +9,23 @@ class NavBarComponent extends React.Component{
         return(
             <div>
                 <nav  class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
-                    <a class="navbar-brand text-white-lg"   href="http://localhost:3000/dashboard">E-voting</a>
+                    <a class="navbar-brand text-white-lg"   href="/dashboard">E-voting</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link text-white-50" href="http://localhost:3000/dashboard">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link text-white-50" href="/dashboard">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="http://localhost:3000/createcandidates">New Tender</a>
+                            <a class="nav-link text-white" href="/createtender">New Tender</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="http://localhost:3000/castvote">Apply Tender</a>
+                            <a class="nav-link text-white" href="/application">Apply Tender</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="http://localhost:3000/dashboard">How To Apply?</a>
+                            <a class="nav-link text-white" href="/howtoapply">How To Apply?</a>
                         </li>
                         </ul>
                     </div>
