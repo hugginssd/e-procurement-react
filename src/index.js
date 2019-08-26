@@ -1,11 +1,12 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Route, BrowserRouter as Router} from 'react-react-dom';
+import {Route, BrowserRouter as Router} from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import LoginComponent from '../login/login';
-import SignupComponent from '../signup/signup';
+import LoginComponent from './login/login';
+import SignupComponent from './signup/signup';
+import DashboardComponent from './dashboard/dashboard';
 
 const firebase = require("firebase");
 require("firebase/firestore");
@@ -25,6 +26,7 @@ const routing = (
             <div id = "routing-container" >
                 <Route path = '/login' component = { LoginComponent } ></Route> 
                 <Route path = '/signup' component = { SignupComponent } ></Route> 
+                <Route path = '/dashboard' component = { DashboardComponent } ></Route> 
             </div>  
         </Router>
     );

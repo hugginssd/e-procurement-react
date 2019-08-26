@@ -8,7 +8,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import styles from './style';
+import styles from './styles';
 // eslint-disable-next-line no-unused-vars
 import { FormControlLabel } from '@material-ui/core';
 // eslint-disable-next-line no-unused-vars

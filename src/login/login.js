@@ -9,7 +9,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import styles from './style';
+import styles from './styles';
 import { FormControlLabel } from '@material-ui/core';
 import { Create, EmailOutlined , DoneTwoTone} from '@material-ui/icons';
 const firebase = require("firebase");
@@ -53,8 +53,7 @@ class LoginComponent extends React.Component {
                     <Typography component = 'h5' variant = 'h6' className = { classes.noAccountHeader } > Don 't have an account?</Typography> 
                     <Link className = { classes.Link } to = '/signup'> Sign Up! </Link> 
             </Paper>
-
-            </main>
+          </main>
         );
     }
 
