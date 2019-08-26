@@ -7,7 +7,12 @@ import styles from './styles';
 class DashboardComponent extends React.Component{
 
     render(){
-        return(<div>Hello from dashboard</div>);
+        return(
+            <div>
+                 <NavBarComponent></NavBarComponent>
+                 Hello from dashboard component
+            </div>
+        );
     }
 }
 
