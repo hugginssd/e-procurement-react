@@ -12,7 +12,6 @@ class CreateTenderComponent extends React.Component{
                 
                         <NavBarComponent></NavBarComponent>
                          Hello from CreateTenderComponent
-                
                 </div>
         );
     }
