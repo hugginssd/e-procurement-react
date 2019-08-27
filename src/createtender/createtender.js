@@ -1,13 +1,19 @@
 import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import styles from './styles';
+import NavBarComponent from '../navbar/navbar';
 
 
 class CreateTenderComponent extends React.Component{
 
     render(){
         return(
-                <div>Hello from CreateTenderComponent</div>
+                <div>
+                
+                        <NavBarComponent></NavBarComponent>
+                         Hello from CreateTenderComponent
+                
+                </div>
         );
     }
 }
