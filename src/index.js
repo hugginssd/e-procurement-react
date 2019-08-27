@@ -10,6 +10,8 @@ import DashboardComponent from './dashboard/dashboard';
 import ViewAnnouncementDetailsComponent from './viewannouncementdetails/viewannouncementdetails';
 import AnnouncementComponent from './announcement/announcement';
 import HowToApplyComponent from './howtoapply/howtoapply';
+import CreateTenderComponent from './createtender/createtender';
+import ApplicationComponent from './application/application';
 
 
 const firebase = require("firebase");
@@ -34,6 +36,8 @@ const routing = (
                 <Route path = '/announcement' component = { AnnouncementComponent } ></Route> 
                 <Route path = '/viewannouncementdetails' component = { ViewAnnouncementDetailsComponent } ></Route> 
                 <Route path='/howtoapply' component={HowToApplyComponent}></Route>
+                <Route path='/createtender' component={CreateTenderComponent}></Route>
+                <Route path='/application' component={ApplicationComponent}></Route>
             </div>  
         </Router>
     );
