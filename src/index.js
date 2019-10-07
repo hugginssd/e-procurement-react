@@ -30,10 +30,10 @@ firebase.initializeApp({
 const routing = ( 
         <Router >
             <div id = "routing-container" >
-                <Route path = '/login' component = { LoginComponent } exact={true} ></Route> 
-                <Route exact path="/" render={() => <Redirect to="/login" />} />
+                <Route path = '/dashboard' component = { DashboardComponent } exact={true} ></Route> 
+                <Route exact path="/" render={() => <Redirect to="/dashboard" />} />
                 <Route path = '/signup' component = { SignupComponent } ></Route> 
-                <Route path = '/dashboard' component = { DashboardComponent } ></Route> 
+                <Route path = '/login' component = { LoginComponent } ></Route> 
                 <Route path = '/announcement' component = { AnnouncementComponent } ></Route> 
                 <Route path = '/viewannouncementdetails' component = { ViewAnnouncementDetailsComponent } ></Route> 
                 <Route path='/howtoapply' component={HowToApplyComponent}></Route>
