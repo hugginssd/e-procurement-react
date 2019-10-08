@@ -1,5 +1,5 @@
 import React from 'react';
-import {withStyles} from '@material-ui/core'
+import {withStyles, Button} from '@material-ui/core'
 import styles from './styles'
 // import Typography from '@material-ui/core/Typography'
 
@@ -18,8 +18,8 @@ class NavBarComponent extends React.Component{
                         <li class="nav-item active">
                             <a class="nav-link text-white-50" href="/dashboard">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/createtender">New Tender</a>
+                        <li class="nav-item"  onKeyPress={(e)=>this.openNewTender(e)}>
+                            <a class="nav-link text-white" href="/creeatetender">New Tender</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="/application">Apply Tender</a>
@@ -37,6 +37,15 @@ class NavBarComponent extends React.Component{
             </div>
         );
     }
+
+    openNewTender =(e) =>{
+        e.preventDefault();
+        
+        this.props.history.push('/createtender');
+    }
+
+
+
 }
 
 export default withStyles(styles)(NavBarComponent);
