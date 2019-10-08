@@ -19,7 +19,7 @@ class NavBarComponent extends React.Component{
                             <a class="nav-link text-white-50" href="/dashboard">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item"  >
-                            <a class="nav-link text-white" href={(e)=> this.openNewTender(e)}>New Tender</a>
+                            <a class="nav-link text-white" href="/createtender">New Tender</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="/application">Apply Tender</a>
@@ -38,10 +38,10 @@ class NavBarComponent extends React.Component{
         );
     }
 
-    openNewTender =(e) =>{
+    openNewTender =() =>{
        
         this.props.history.push('/createtender');
-        e.preventDefault();
+        console.log("Created tender");
         
     }
 
