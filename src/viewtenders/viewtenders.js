@@ -7,7 +7,7 @@ class   ViewTendersComponent extends React.Component{
     render(){
 
         const{classes}=this.props;
-        
+
         return(
             <div className={classes.table}>
             <table class="table">
@@ -45,7 +45,6 @@ class   ViewTendersComponent extends React.Component{
                       </tr>
                   </tbody>
               </table>
-
           </div>
         );
     }
