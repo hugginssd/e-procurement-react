@@ -12,6 +12,7 @@ import AnnouncementComponent from './announcement/announcement';
 import HowToApplyComponent from './howtoapply/howtoapply';
 import CreateTenderComponent from './createtender/createtender';
 import ApplicationComponent from './application/application';
+import ViewTendersComponent from './viewtenders/viewtenders';
 
 
 const firebase = require("firebase");
@@ -39,6 +40,7 @@ const routing = (
                 <Route path='/howtoapply' component={HowToApplyComponent}></Route>
                 <Route path='/createtender' component={CreateTenderComponent}></Route>
                 <Route path='/application' component={ApplicationComponent}></Route>
+                <Route path='/viewtenders' component={ViewTendersComponent}></Route>
             </div>  
         </Router>
     );
