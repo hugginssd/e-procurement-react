@@ -52,7 +52,7 @@ class SignupComponent extends React.Component {
                                 <InputLabel htmlFor = 'signup-password-confirmation-input' > Confirm your password </InputLabel>  
                                 <Input type = 'password' onChange = { (e) => this.userTyping('passwordConfirmation', e) } id = 'signup-password-confirmation-input' ></Input>  
                             </FormControl> 
-                            <Button type = 'submit' fullWidth variant = 'contained' color = 'primary' className = { classes.submit } > Submit </Button>  
+                            <Button type = 'submit' fullWidth variant = 'contained' onSubmit={(e) => this.submitSignup(e)} color = 'primary' className = { classes.submit } > Submit </Button>  
                         </form>  
                     {
                         this.state.signupError ?
